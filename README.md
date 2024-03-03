@@ -1,4 +1,4 @@
-# Project: Anime Database Migration
+# Anime Database Migration
 
 This project aims to migrate data from CSV files to a PostgreSQL database named "anime". The provided Python script facilitates the extraction of data from CSV files, the creation of the database schema, and the insertion of data into the corresponding tables within the database.
 
