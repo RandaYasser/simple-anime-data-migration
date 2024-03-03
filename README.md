@@ -26,7 +26,7 @@ This project aims to migrate data from CSV files to a PostgreSQL database named 
    ```
 
 3. **CSV Files:**
-   Prepare your CSV files containing the data to be migrated. The script expects two CSV files: `anime.csv` and `rating.csv`.
+   Prepare your CSV files containing the data to be migrated. The script expects two CSV files: `anime.csv` and `rating.csv`. You can download the dataset from https://www.kaggle.com/datasets/CooperUnion/anime-recommendations-database
 
 ## Usage
 
@@ -34,7 +34,7 @@ This project aims to migrate data from CSV files to a PostgreSQL database named 
    Clone or download the repository to your local machine.
 
 2. **Run the Script:**
-   Execute the Python script `anime_migration.py`. This script performs the following actions:
+   Execute the Python script `data_migration.py`. This script performs the following actions:
 
    - Connects to the PostgreSQL database.
    - Creates necessary tables (`anime` and `rating`) if they do not exist.
@@ -42,7 +42,7 @@ This project aims to migrate data from CSV files to a PostgreSQL database named 
    - Inserts data into the respective tables in the database.
 
    ```
-   python anime_migration.py
+   python data_migration.py
    ```
 
 3. **Verify Data:**
