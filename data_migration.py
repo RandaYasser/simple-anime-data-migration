@@ -8,7 +8,7 @@ import numpy as np
 # Function to connect to the database
 def create_database():
 
-    conn = psycopg2.connect("host=127.0.0.1  dbname=postgres user=postgres password=Abas2320841")
+    conn = psycopg2.connect("host=127.0.0.1  dbname=postgres user=postgres password=********")
     conn.set_session(autocommit=True)
     cur = conn.cursor()
     cur.execute("DROP DATABASE anime")
@@ -17,7 +17,7 @@ def create_database():
     conn.close()
 
     try:
-        conn = psycopg2.connect("host=127.0.0.1  dbname=anime user=postgres password=Abas2320841")
+        conn = psycopg2.connect("host=127.0.0.1  dbname=anime user=postgres password=********")
     except psycopg2.Error as e:
         print("Error: Couldn't connect to the database")
         print(e)
